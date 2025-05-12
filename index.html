@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juliene & Filipe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f3f0 url('https://www.transparenttextures.com/patterns/cream-dust.png') repeat;
+      background-size: cover;
+      color: #1c2b4a;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .photo-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+
+    .polaroid {
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transform: rotate(-5deg);
+      max-width: 200px;
+      flex: 1 1 150px;
+    }
+
+    .polaroid:nth-child(2) {
+      transform: rotate(5deg);
+    }
+
+    .polaroid img {
+      width: 100%;
+      border-radius: 5px;
+      height: auto;
+    }
+
+    .title {
+      font-family: 'Georgia', cursive;
+      font-size: 2.5em;
+      margin-top: 20px;
+    }
+
+    .date {
+      font-size: 1em;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      color: white;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+
+    .btn1 { background-color: #1f3c88; }
+    .btn2 { background-color: #45aaf2; }
+    .btn3 { background-color: #2ecc71; }
+
+    .btn:hover { opacity: 0.9; }
+
+    @media (max-width: 480px) {
+      .title {
+        font-size: 2em;
+      }
+
+      .polaroid {
+        transform: none !important;
+      }
+
+      .photo-section {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="photo-section">
+    <div class="polaroid">
+      <img src="https://via.placeholder.com/200x250?text=Foto+1" alt="Foto 1">
+    </div>
+    <div class="polaroid">
+      <img src="https://via.placeholder.com/200x250?text=Foto+2" alt="Foto 2">
+    </div>
+  </div>
+
+  <h1 class="title">Juliene & Filipe</h1>
+  <p class="date">02/08/2025</p>
+
+  <div class="buttons">
+    <a href="#" class="btn btn1">Lista 1 (Ideal para compras parceladas)</a>
+    <a href="#" class="btn btn2">Lista 2 (Ideal para compras à vista e pix)</a>
+    <a href="#" class="btn btn3">Confirmar Presença</a>
+  </div>
+</body>
+</html>
